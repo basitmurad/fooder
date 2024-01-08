@@ -1,6 +1,7 @@
 import 'dart:math';
 
 import 'package:flutter/material.dart';
+import 'package:fooder/dashboard.dart';
 import 'package:fooder/registrationScreen.dart';
 
 class SplashScreen extends StatefulWidget {
@@ -98,7 +99,7 @@ class _SplashScreenState extends State<SplashScreen> {
                     child: ElevatedButton(
                       onPressed: () {
 
-                        Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) =>RegistrationScreen()));
+                        Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) =>DashboardScreen()));
                       },
                       child: Text(
                         'Get Started ',

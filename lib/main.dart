@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:fooder/SplashScreen.dart';
+import 'package:fooder/dashboard.dart';
 
 void main() {
 
@@ -10,7 +11,7 @@ class MyApp extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: SplashScreen(),
+      home: DashboardScreen(),
     );
     // TODO: implement build
     throw UnimplementedError();

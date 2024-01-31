@@ -37,7 +37,7 @@ class _SplashScreenState extends State<SplashScreen> {
             child: Column(
               children: [
                 Container(
-                  margin: EdgeInsets.only(top: 80, left: 40),
+                  margin: EdgeInsets.only(top: 40, left: 40),
                   alignment: Alignment.topLeft,
                   child: CircleAvatar(
                     radius: 45,
@@ -57,37 +57,10 @@ class _SplashScreenState extends State<SplashScreen> {
                     ),
                   ),
                 ),
-                Stack(
-                  children: <Widget>[
-                    // Widget at the bottom of the stack
-                    Container(
+                Container(
 
-                      child: Image.asset('assets/images/image.png'),
-                    ),
-                    // Widget in the middle of the stack
-                    Positioned(
-                      top: 325.0,
-                      child: Container(
-
-                        width: 360,
-                        height: 70,
-                        decoration: BoxDecoration(
-                          color: Colors.pink,
-                          boxShadow: [
-                            BoxShadow(
-                              color: Colors.red.withOpacity(0.9),
-                              spreadRadius: 2,
-                              blurRadius: 3,
-                              offset: Offset(0,3)
-                            )
-                          ]
-                        ),
-
-
-                      ),
-                    ),
-                    // Widget on top of the stack
-                  ],
+                  child: Image.asset('assets/images/image.png'
+                  ),
                 ),
 
                 Padding(
@@ -99,7 +72,7 @@ class _SplashScreenState extends State<SplashScreen> {
                     child: ElevatedButton(
                       onPressed: () {
 
-                        Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) =>DashboardScreen()));
+                        Navigator.push(context, MaterialPageRoute(builder: (context) =>RegistrationScreen()));
                       },
                       child: Text(
                         'Get Started ',
